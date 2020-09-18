@@ -63,7 +63,7 @@ $buttonMyPrinters_Click = {
 				$blank -replace "(sjh-fsps)", $blank -replace "(mhs-fsps)", $blank -replace "(jjh-fsps)", $blank -replace "(whs12a)",
 				$blank -replace "(wjh-fsps)", $blank)" + "`r`n" + "Location: $($_.Location)" + "`r`n" + "Status: $($_.PrinterStatus)" + "`r`n"
 		}		
-	}
+}
 	
 	$printerOutputbox.lines = get-printers
 	
@@ -76,7 +76,7 @@ $buttonMyPrinters_Click = {
 	
 	$buttonMyPrinters.Enabled = $true	
 	$buttonMyPrinters.Text = "My Printers"
-	}
+}
 
 # Enable print code button upon combobox selection
 $comboboxCopier_SelectedIndexChanged = {
